@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Redirect</title>
+  <script>
+    // Change these URLs to your target links
+    const link1 = "https://leidenuniv.eu.qualtrics.com/jfe/form/SV_1Y2yswO2V9JUFng";
+    const link2 = "https://leidenuniv.eu.qualtrics.com/jfe/form/SV_3mlKslkF1OqE8yW";
+
+    // Function that randomly chooses a link
+    function randomRedirect() {
+      const randomNum = Math.random();  // Generates a number between 0 and 1
+      if (randomNum < 0.5) {
+        window.location.href = link1;  // Redirect to link1
+      } else {
+        window.location.href = link2;  // Redirect to link2
+      }
+    }
+    
+    // Redirect on page load
+    window.onload = randomRedirect;
+  </script>
+</head>
+<body>
+</body>
+</html>
